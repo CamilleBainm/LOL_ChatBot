@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title>LoL Draft Helper — Chat</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <style>
+    :root{
+      --bg:#0b0f17; --panel:#101828; --muted:#9fb0d3; --line:#1f2a44; --accent:#6ea8fe; --text:#e6eaf2;
+      --user:#17233a; --assistant:#0f1b2f;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(160deg,#0b0f17,#0e1322 50%,#0b0f17);color:var(--text);
+         font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial}
+    header{position:sticky;top:0;background:#0e1422cc;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:10}
+    .bar{max-width:960px;margin:auto;padding:12px 16px; display:flex; gap:12px; align-items:center; justify-content:space-between}
+    h1{margin:0;font-size:16px;letter-spacing:.3px}
+    .persona{display:flex;gap:6px;align-items:center}
+    select,button{background:#0f1628;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+    button.primary{background:var(--accent);color:#08101f;border:0;font-weight:700;cursor:pointer}
+    .wrap{max-width:960px;margin:18px auto;padding:0 16px}
+    .chat{background:var(--panel);border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column;height:70vh;min-height:460px}
+    .messages{flex:1;overflow:auto;padding:16px}
+    .msg{display:flex;gap:10px;margin:10px 0}
+    .msg .bubble{padding:12px 14px;border:1px solid var(--line);border-radius:14px;max-width:75%;white-space:pre-wrap}
+    .msg.user{justify-content:flex-end}
+    .msg.user .bubble{background:var(--user)}
+    .msg.assistant .bubble{background:var(--assistant)}
+    .msg .tools{margin-top:8px}
+    .composer{border-top:1px solid var(--line);padding:10px;display:flex;gap:10px;align-items:flex-end}
+    textarea{flex:1;background:#0f1628;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-height:60px;max-height:180px;resize:vertical}
+    .hint{font-size:12px;color:var(--muted)}
+    .row{display:flex;gap:8px;align-items:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <h1>LoL Draft Helper — Chat</h1>
+      <div class="persona">
+        <label for="persona" class="hint">Persona :</label>
+        <select id="persona">
+          <option value="lol" selected>Coach League of Legends</option>
+          <option value="general">Assistant général</option>
+        </select>
+        <button id="new" title="Nouvelle conversation">Nouvelle conversation</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="chat">
+      <div id="messages" class="messages"></div>
+      <div class="composer">
+        <textarea id="input" placeholder="Écris ici… (Entrée = envoyer, Shift+Entrée = nouvelle ligne)"></textarea>
+        <div class="row">
+          <button id="send" class="primary">Envoyer</button>
+          <span class="hint">API : http://localhost:8000</span>
+        </div>
+      </div>
+    </div>
+    <p class="hint" style="margin-top:8px">
+      Astuce : colle deux compos au format
+      <code>Blue: Top=..., Jungle=..., Mid=..., ADC=..., Support=... Red: Top=..., Jungle=..., Mid=..., ADC=..., Support=...</code>
+      pour une analyse de draft.
+    </p>
+  </div>
+
+  <script>
+    const apiBase = "http://localhost:8000";
+    const elMsgs = document.getElementById("messages");
+    const elInput = document.getElementById("input");
+    const elSend = document.getElementById("send");
+    const elNew  = document.getElementById("new");
+    const elPersona = document.getElementById("persona");
+
+    // Historique façon ChatGPT
+    let history = [];
+
+    const SYSTEMS = {
+      lol: "Tu es un assistant League of Legends. Réponds en français, clairement et utilement. Si l'utilisateur fournit deux compositions (Blue et Red) avec les rôles, analyse la draft brièvement.",
+      general: "Tu es un assistant conversationnel en français. Réponds de façon naturelle, polie et utile."
+    };
+
+    function resetChat(){
+      history = [{ role: "system", content: SYSTEMS[elPersona.value] }];
+      elMsgs.innerHTML = "";
+      addAssistant("Bonjour ! Comment puis-je t’aider ?");
+    }
+
+    function addMessage(role, text){
+      const div = document.createElement("div");
+      div.className = "msg " + role;
+
+      const bubble = document.createElement("div");
+      bubble.className = "bubble";
+      bubble.innerText = text;
+
+      div.appendChild(bubble);
+
+      // zone outils (ex: “Continuer ↻”)
+      const tools = document.createElement("div");
+      tools.className = "tools";
+      div.appendChild(tools);
+
+      elMsgs.appendChild(div);
+      elMsgs.scrollTop = elMsgs.scrollHeight;
+      return {div, bubble, tools};
+    }
+    function addUser(text){ return addMessage("user", text); }
+    function addAssistant(text){ return addMessage("assistant", text); }
+
+    function looksTruncated(text){
+      // Si pas de ponctuation finale et texte assez long → probablement coupé
+      return !/[.!?…»”)\]]\s*$/.test(text) && text.trim().split(/\s+/).length > 12;
+    }
+
+    function attachContinueButton(toolsEl){
+      const btn = document.createElement("button");
+      btn.textContent = "Continuer ↻";
+      btn.onclick = () => send("continue");
+      toolsEl.appendChild(btn);
+    }
+
+    async function callChatAPI(historyToSend){
+      const body = {
+        messages: historyToSend,
+        max_new_tokens: 512,   // plus long
+        min_new_tokens: 80,    // évite la coupure trop tôt
+        temperature: 0.7,
+        top_p: 0.9,
+        system: SYSTEMS[elPersona.value],
+      };
+      const res = await fetch(apiBase + "/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    }
+
+    async function send(textOverride=null){
+      const text = textOverride ?? elInput.value.trim();
+      if (!text) return;
+      if (!textOverride) elInput.value = "";
+
+      history.push({ role:"user", content: text });
+      const {div: udiv} = addUser(text);
+      const {div, bubble, tools} = addAssistant("…"); // spinner simple
+
+      try{
+        const payload = history.slice();
+        const data = await callChatAPI(payload);
+        const reply = data.text || "(vide)";
+        bubble.innerText = reply;
+        history.push({ role:"assistant", content: reply });
+
+        // si coupée → bouton Continuer
+        if (looksTruncated(reply)) attachContinueButton(tools);
+
+      }catch(err){
+        bubble.innerText = "❌ Erreur : " + err.message + "\nVérifie que l’API tourne sur http://localhost:8000";
+      }
+      elMsgs.scrollTop = elMsgs.scrollHeight;
+    }
+
+    elSend.addEventListener("click", ()=>send());
+    elInput.addEventListener("keydown", (e)=>{
+      if (e.key === "Enter" && !e.shiftKey){
+        e.preventDefault(); send();
+      }
+    });
+    elNew.addEventListener("click", resetChat);
+    elPersona.addEventListener("change", resetChat);
+
+    // init
+    resetChat();
+  </script>
+</body>
+</html>

@@ -1,0 +1,507 @@
+  [
+    {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Quinn, Jungle=Graves, Mid=Viktor, ADC=Mel, Support=Vel'Koz\nRed: Top=Fiddlesticks, Jungle=Kha'Zix, Mid=Kennen, ADC=Jinx, Support=Braum",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Rumble, Jungle=Qiyana, Mid=Cassiopeia, ADC=nan, Support=Jarvan IV\nRed: Top=Aatrox, Jungle=Ivern, Mid=Ahri, ADC=Lucian, Support=Milio",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Cho'Gath, Jungle=Wukong, Mid=Malzahar, ADC=Jhin, Support=Yuumi\nRed: Top=Garen, Jungle=Ekko, Mid=Lux, ADC=Jinx, Support=Nami",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Ryze, Jungle=Kindred, Mid=LeBlanc, ADC=Caitlyn, Support=Thresh\nRed: Top=Singed, Jungle=Hecarim, Mid=Sylas, ADC=Ezreal, Support=Lux",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Riven, Jungle=Sejuani, Mid=Aurora, ADC=Sivir, Support=Yuumi\nRed: Top=Kayle, Jungle=Zac, Mid=Vel'Koz, ADC=Caitlyn, Support=Blitzcrank",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sett, Jungle=Ivern, Mid=Diana, ADC=Sivir, Support=Milio\nRed: Top=Gnar, Jungle=Shaco, Mid=Twisted Fate, ADC=Lucian, Support=Pyke",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Mordekaiser, Jungle=Olaf, Mid=Malzahar, ADC=Smolder, Support=Thresh\nRed: Top=Darius, Jungle=Maître Yi, Mid=Fizz, ADC=Varus, Support=Milio",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Dr. Mundo, Jungle=Rek'Sai, Mid=Twisted Fate, ADC=Sivir, Support=Milio\nRed: Top=Cho'Gath, Jungle=Viego, Mid=Yasuo, ADC=Vayne, Support=Zilean",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Garen, Jungle=Dr. Mundo, Mid=Viktor, ADC=Ezreal, Support=Mel\nRed: Top=Kayle, Jungle=Nunu et Willump, Mid=Lux, ADC=Vayne, Support=Rell",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Yone, Jungle=Viego, Mid=Swain, ADC=Twitch, Support=Nami\nRed: Top=Sion, Jungle=Lee Sin, Mid=Irelia, ADC=Miss Fortune, Support=Lulu",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Gangplank, Jungle=Jarvan IV, Mid=Ahri, ADC=Ashe, Support=Milio\nRed: Top=Sion, Jungle=Volibear, Mid=Anivia, ADC=Jhin, Support=Senna",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Darius, Jungle=Kayn, Mid=Swain, ADC=Jhin, Support=Soraka\nRed: Top=Gragas, Jungle=Zed, Mid=Yasuo, ADC=Lux, Support=Morgana",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Pantheon, Jungle=Vi, Mid=Zed, ADC=Heimerdinger, Support=Milio\nRed: Top=Sett, Jungle=Nocturne, Mid=Taliyah, ADC=Caitlyn, Support=Zyra",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Malphite, Jungle=Viego, Mid=Taliyah, ADC=Jhin, Support=Blitzcrank\nRed: Top=Warwick, Jungle=Ekko, Mid=Naafiri, ADC=Sivir, Support=Milio",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Teemo, Jungle=Talon, Mid=Galio, ADC=Caitlyn, Support=Pyke\nRed: Top=Sion, Jungle=Wukong, Mid=Kassadin, ADC=Miss Fortune, Support=Milio",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sion, Jungle=Lillia, Mid=Zed, ADC=Jhin, Support=Xerath\nRed: Top=Yone, Jungle=Lee Sin, Mid=Fizz, ADC=Jinx, Support=Milio",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Vladimir, Jungle=Graves, Mid=Irelia, ADC=Ziggs, Support=Poppy\nRed: Top=Gangplank, Jungle=Lillia, Mid=Ahri, ADC=Jhin, Support=Morgana",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Gangplank, Jungle=Viego, Mid=Aurora, ADC=Jinx, Support=Braum\nRed: Top=Gwen, Jungle=Maître Yi, Mid=Syndra, ADC=Ezreal, Support=Rell",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Poppy, Jungle=Viego, Mid=Cho'Gath, ADC=Jhin, Support=Vel'Koz\nRed: Top=Tryndamere, Jungle=Ekko, Mid=Lissandra, ADC=Miss Fortune, Support=Lulu",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Shen, Jungle=Gwen, Mid=Talon, ADC=Aphelios, Support=Lulu\nRed: Top=Teemo, Jungle=Kayn, Mid=Tristana, ADC=Ezreal, Support=Rakan",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Gangplank, Jungle=Shyvana, Mid=Varus, ADC=Taliyah, Support=Nautilus\nRed: Top=Pantheon, Jungle=Talon, Mid=Brand, ADC=Smolder, Support=Janna",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Cho'Gath, Jungle=Vi, Mid=Sylas, ADC=Tristana, Support=Nautilus\nRed: Top=Gwen, Jungle=Talon, Mid=Pantheon, ADC=Kai'Sa, Support=Poppy",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Swain, Jungle=Viego, Mid=Fizz, ADC=Kai'Sa, Support=Braum\nRed: Top=Sett, Jungle=Naafiri, Mid=Veigar, ADC=Tristana, Support=Karma",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sion, Jungle=Amumu, Mid=Malzahar, ADC=Twitch, Support=Lulu\nRed: Top=Ornn, Jungle=Talon, Mid=Lissandra, ADC=Vayne, Support=Milio",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Rumble, Jungle=Kayn, Mid=Ryze, ADC=Xayah, Support=Karma\nRed: Top=Yone, Jungle=Wukong, Mid=Orianna, ADC=Ashe, Support=Braum",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Gragas, Jungle=Hecarim, Mid=Tristana, ADC=Lucian, Support=Braum\nRed: Top=Vladimir, Jungle=Naafiri, Mid=Azir, ADC=Kai'Sa, Support=Lulu",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Singed, Jungle=Zed, Mid=Orianna, ADC=Caitlyn, Support=Morgana\nRed: Top=Aatrox, Jungle=Kha'Zix, Mid=Veigar, ADC=Jhin, Support=Lux",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Vayne, Jungle=Briar, Mid=Ambessa, ADC=Ziggs, Support=Nautilus\nRed: Top=Darius, Jungle=Pantheon, Mid=Ahri, ADC=Caitlyn, Support=Teemo",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Renekton, Jungle=Pantheon, Mid=Lux, ADC=Jinx, Support=Lulu\nRed: Top=Vayne, Jungle=Amumu, Mid=Anivia, ADC=Miss Fortune, Support=Leona",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Volibear, Jungle=Trundle, Mid=Ahri, ADC=Tristana, Support=Janna\nRed: Top=Irelia, Jungle=Pantheon, Mid=Zed, ADC=Sivir, Support=Bard",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Ambessa, Jungle=Rengar, Mid=Ahri, ADC=Vayne, Support=Milio\nRed: Top=Malphite, Jungle=Qiyana, Mid=Lux, ADC=Sivir, Support=Karma",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Fiora, Jungle=Udyr, Mid=Hwei, ADC=nan, Support=Poppy\nRed: Top=Garen, Jungle=Jarvan IV, Mid=Ahri, ADC=Jhin, Support=Zyra",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Pantheon, Jungle=Kayn, Mid=Ahri, ADC=Caitlyn, Support=Milio\nRed: Top=Irelia, Jungle=Wukong, Mid=Malzahar, ADC=Miss Fortune, Support=Leona",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Darius, Jungle=Hecarim, Mid=Ahri, ADC=Kai'Sa, Support=Blitzcrank\nRed: Top=Fiora, Jungle=Lee Sin, Mid=Syndra, ADC=Jhin, Support=Lulu",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Poppy, Jungle=Gwen, Mid=Ahri, ADC=Jinx, Support=Milio\nRed: Top=Fiora, Jungle=Lee Sin, Mid=Vladimir, ADC=Smolder, Support=Xerath",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Camille, Jungle=Nunu et Willump, Mid=Vel'Koz, ADC=Kalista, Support=Alistar\nRed: Top=Cho'Gath, Jungle=Sylas, Mid=Syndra, ADC=Aphelios, Support=Swain",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Fiora, Jungle=Volibear, Mid=Ahri, ADC=Miss Fortune, Support=Ashe\nRed: Top=Dr. Mundo, Jungle=Evelynn, Mid=Aurora, ADC=Jinx, Support=Zilean",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Malzahar, Jungle=Viego, Mid=Quinn, ADC=Vayne, Support=Milio\nRed: Top=Teemo, Jungle=Shaco, Mid=Ahri, ADC=Sivir, Support=Zac",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Camille, Jungle=Talon, Mid=Viktor, ADC=Tristana, Support=Karma\nRed: Top=Fiora, Jungle=Vi, Mid=Ahri, ADC=Senna, Support=Soraka",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Volibear, Jungle=Briar, Mid=Ahri, ADC=Ezreal, Support=Senna\nRed: Top=Zed, Jungle=Talon, Mid=Cho'Gath, ADC=Aphelios, Support=Nami",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Yasuo, Jungle=Kayn, Mid=Vex, ADC=Kai'Sa, Support=Braum\nRed: Top=Karma, Jungle=Jarvan IV, Mid=Ahri, ADC=Aphelios, Support=Bard",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Jax, Jungle=Ekko, Mid=Ahri, ADC=Vayne, Support=Bard\nRed: Top=Garen, Jungle=Kha'Zix, Mid=Galio, ADC=Caitlyn, Support=Janna",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sett, Jungle=Warwick, Mid=Ahri, ADC=Kalista, Support=Thresh\nRed: Top=Renekton, Jungle=Jarvan IV, Mid=Hwei, ADC=Ezreal, Support=Annie",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Nasus, Jungle=Xin Zhao, Mid=Ahri, ADC=Kai'Sa, Support=Soraka\nRed: Top=Urgot, Jungle=Rengar, Mid=Ekko, ADC=nan, Support=Lulu",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Darius, Jungle=Rengar, Mid=Ryze, ADC=Miss Fortune, Support=Braum\nRed: Top=Camille, Jungle=Graves, Mid=Ahri, ADC=Caitlyn, Support=Rakan",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Renekton, Jungle=Diana, Mid=Swain, ADC=Caitlyn, Support=Nami\nRed: Top=Tryndamere, Jungle=Volibear, Mid=Ahri, ADC=Jhin, Support=Alistar",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Trundle, Jungle=Poppy, Mid=Orianna, ADC=Vayne, Support=Soraka\nRed: Top=Gwen, Jungle=Wukong, Mid=Yasuo, ADC=Sivir, Support=Xerath",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Riven, Jungle=Rengar, Mid=Malphite, ADC=Miss Fortune, Support=LeBlanc\nRed: Top=Renekton, Jungle=Warwick, Mid=Kassadin, ADC=Lucian, Support=Milio",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Poppy, Jungle=Sylas, Mid=Xerath, ADC=Sivir, Support=Nautilus\nRed: Top=Dr. Mundo, Jungle=Fiddlesticks, Mid=Yone, ADC=Brand, Support=Séraphine",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Rumble, Jungle=Maître Yi, Mid=LeBlanc, ADC=Kai'Sa, Support=Thresh\nRed: Top=Garen, Jungle=Fiddlesticks, Mid=Twisted Fate, ADC=Lucian, Support=Vel'Koz",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=K'Santé, Jungle=Zed, Mid=Xerath, ADC=Sivir, Support=Sona\nRed: Top=Singed, Jungle=Viego, Mid=Viktor, ADC=Tristana, Support=Karma",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Cho'Gath, Jungle=Wukong, Mid=LeBlanc, ADC=nan, Support=Renata Glasc\nRed: Top=Shen, Jungle=Volibear, Mid=Brand, ADC=Miss Fortune, Support=Leona",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sion, Jungle=Briar, Mid=Malzahar, ADC=Aphelios, Support=Soraka\nRed: Top=Kayn, Jungle=Rengar, Mid=Swain, ADC=Tristana, Support=Brand",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Urgot, Jungle=Udyr, Mid=Diana, ADC=Samira, Support=Karma\nRed: Top=Xin Zhao, Jungle=Kayn, Mid=Viktor, ADC=Draven, Support=Lulu",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Vladimir, Jungle=Brand, Mid=Sylas, ADC=Sivir, Support=Alistar\nRed: Top=Dr. Mundo, Jungle=Warwick, Mid=LeBlanc, ADC=Tristana, Support=Karma",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Dr. Mundo, Jungle=Evelynn, Mid=Mel, ADC=Jhin, Support=Lux\nRed: Top=Volibear, Jungle=Nilah, Mid=LeBlanc, ADC=Smolder, Support=Leona",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Ornn, Jungle=Xin Zhao, Mid=Ekko, ADC=Jhin, Support=Renata Glasc\nRed: Top=Jayce, Jungle=Dr. Mundo, Mid=Zed, ADC=Nilah, Support=Yuumi",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Dr. Mundo, Jungle=Jarvan IV, Mid=Sylas, ADC=Jinx, Support=Xerath\nRed: Top=Illaoi, Jungle=Ivern, Mid=Ryze, ADC=Kog'Maw, Support=Taric",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Malzahar, Jungle=Nocturne, Mid=Zed, ADC=Kai'Sa, Support=Ashe\nRed: Top=Volibear, Jungle=Wukong, Mid=Jhin, ADC=Mel, Support=Morgana",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sett, Jungle=Rengar, Mid=Katarina, ADC=Jinx, Support=Mel\nRed: Top=Volibear, Jungle=Hecarim, Mid=Ryze, ADC=Lucian, Support=Nami",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Renekton, Jungle=Brand, Mid=Mel, ADC=Yasuo, Support=Sylas\nRed: Top=Illaoi, Jungle=Elise, Mid=Yone, ADC=Ashe, Support=Senna",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Gragas, Jungle=Nunu et Willump, Mid=Aurelion Sol, ADC=Tristana, Support=Rakan\nRed: Top=Vladimir, Jungle=Viego, Mid=Swain, ADC=Caitlyn, Support=Camille",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Rumble, Jungle=Poppy, Mid=Viktor, ADC=Kai'Sa, Support=Blitzcrank\nRed: Top=Mordekaiser, Jungle=Viego, Mid=Syndra, ADC=Zeri, Support=Yuumi",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Malphite, Jungle=Jarvan IV, Mid=Xerath, ADC=Jinx, Support=Lux\nRed: Top=Garen, Jungle=Amumu, Mid=Ryze, ADC=Caitlyn, Support=Nami",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Urgot, Jungle=Gragas, Mid=Hwei, ADC=Twitch, Support=Karma\nRed: Top=Ahri, Jungle=Volibear, Mid=Vex, ADC=Kalista, Support=Pyke",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Volibear, Jungle=Karthus, Mid=Ryze, ADC=Viego, Support=Taric\nRed: Top=Darius, Jungle=Kha'Zix, Mid=Gwen, ADC=Ezreal, Support=Renata Glasc",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sett, Jungle=Zac, Mid=Galio, ADC=Jinx, Support=Zilean\nRed: Top=Illaoi, Jungle=Wukong, Mid=Aurelion Sol, ADC=Tahm Kench, Support=Lulu",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Galio, Jungle=Kha'Zix, Mid=Kayle, ADC=Twitch, Support=Yuumi\nRed: Top=Nasus, Jungle=Gragas, Mid=Malzahar, ADC=Aphelios, Support=Soraka",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Samira, Jungle=Wukong, Mid=Mel, ADC=Sivir, Support=Morgana\nRed: Top=Darius, Jungle=Ivern, Mid=Syndra, ADC=Zeri, Support=Nami",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Shen, Jungle=Amumu, Mid=Malzahar, ADC=Lucian, Support=Zyra\nRed: Top=Poppy, Jungle=Sejuani, Mid=Diana, ADC=Ezreal, Support=Lulu",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Gwen, Jungle=Bel'Veth, Mid=Smolder, ADC=Hwei, Support=Brand\nRed: Top=K'Santé, Jungle=Nunu et Willump, Mid=Sylas, ADC=Samira, Support=Lulu",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Shen, Jungle=Xin Zhao, Mid=Malzahar, ADC=Vayne, Support=Nautilus\nRed: Top=Gnar, Jungle=Ekko, Mid=Sion, ADC=Kai'Sa, Support=Poppy",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Rumble, Jungle=Jarvan IV, Mid=Fizz, ADC=Ashe, Support=Thresh\nRed: Top=Kennen, Jungle=Amumu, Mid=Diana, ADC=Jhin, Support=Morgana",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Singed, Jungle=Zyra, Mid=Yasuo, ADC=Twitch, Support=Brand\nRed: Top=Urgot, Jungle=Kha'Zix, Mid=Malzahar, ADC=Nilah, Support=Bard",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Malphite, Jungle=Rengar, Mid=Ahri, ADC=Twitch, Support=Senna\nRed: Top=Ryze, Jungle=Kayn, Mid=Malzahar, ADC=Aphelios, Support=Lulu",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Volibear, Jungle=Vi, Mid=Lissandra, ADC=Jhin, Support=Bard\nRed: Top=Kennen, Jungle=Pantheon, Mid=Malzahar, ADC=Ezreal, Support=Brand",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Malphite, Jungle=Pantheon, Mid=Vel'Koz, ADC=Jhin, Support=Brand\nRed: Top=Sion, Jungle=Diana, Mid=Zeri, ADC=Varus, Support=Morgana",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Jayce, Jungle=Kayn, Mid=Ekko, ADC=Ezreal, Support=Séraphine\nRed: Top=Sett, Jungle=Lee Sin, Mid=Syndra, ADC=Jhin, Support=Morgana",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Ambessa, Jungle=Jarvan IV, Mid=Syndra, ADC=Kai'Sa, Support=Brand\nRed: Top=Yone, Jungle=Rek'Sai, Mid=Ahri, ADC=Ezreal, Support=Thresh",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Ryze, Jungle=Hecarim, Mid=Malzahar, ADC=Kai'Sa, Support=Leona\nRed: Top=Naafiri, Jungle=Qiyana, Mid=Yasuo, ADC=Tristana, Support=Brand",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Garen, Jungle=Shaco, Mid=Hwei, ADC=Varus, Support=Pantheon\nRed: Top=Ambessa, Jungle=Diana, Mid=Malzahar, ADC=Jinx, Support=Braum",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=K'Santé, Jungle=Kayn, Mid=Ahri, ADC=Séraphine, Support=Thresh\nRed: Top=Karma, Jungle=Viego, Mid=Soraka, ADC=Senna, Support=Yuumi",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Mordekaiser, Jungle=Rengar, Mid=Akshan, ADC=Viktor, Support=Thresh\nRed: Top=Kayle, Jungle=Udyr, Mid=Syndra, ADC=Ezreal, Support=Sett",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Darius, Jungle=Talon, Mid=Kai'Sa, ADC=Caitlyn, Support=Poppy\nRed: Top=Illaoi, Jungle=Qiyana, Mid=Malzahar, ADC=Lux, Support=Tahm Kench",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Gragas, Jungle=Diana, Mid=Corki, ADC=Miss Fortune, Support=Nautilus\nRed: Top=Shen, Jungle=Viego, Mid=Zed, ADC=Kai'Sa, Support=Brand",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sett, Jungle=Shyvana, Mid=Katarina, ADC=Kai'Sa, Support=Thresh\nRed: Top=Aatrox, Jungle=Xin Zhao, Mid=Malzahar, ADC=Ezreal, Support=Tahm Kench",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sion, Jungle=Trundle, Mid=Orianna, ADC=Jinx, Support=Camille\nRed: Top=Warwick, Jungle=Fiddlesticks, Mid=Qiyana, ADC=Kai'Sa, Support=Soraka",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Jax, Jungle=Rengar, Mid=Zed, ADC=Ziggs, Support=Shaco\nRed: Top=Sion, Jungle=Lee Sin, Mid=Malzahar, ADC=Lucian, Support=Braum",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Camille, Jungle=Jarvan IV, Mid=Aurelion Sol, ADC=Lucian, Support=Vel'Koz\nRed: Top=Sion, Jungle=Viego, Mid=Akali, ADC=Aphelios, Support=Braum",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Malphite, Jungle=Nautilus, Mid=Mel, ADC=Ezreal, Support=Pyke\nRed: Top=Sion, Jungle=Viego, Mid=Katarina, ADC=Aphelios, Support=Braum",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sion, Jungle=Viego, Mid=Zed, ADC=Smolder, Support=Taric\nRed: Top=Shen, Jungle=Nautilus, Mid=Mel, ADC=Kai'Sa, Support=Lux",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Camille, Jungle=Viego, Mid=Diana, ADC=Samira, Support=Nautilus\nRed: Top=Malphite, Jungle=Graves, Mid=Mel, ADC=Sivir, Support=Braum",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Darius, Jungle=Warwick, Mid=Yasuo, ADC=Varus, Support=Kog'Maw\nRed: Top=Yorick, Jungle=Nocturne, Mid=Vex, ADC=Twitch, Support=Braum",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Dr. Mundo, Jungle=Bel'Veth, Mid=Aurora, ADC=Twitch, Support=Braum\nRed: Top=Urgot, Jungle=Rammus, Mid=Kennen, ADC=Kog'Maw, Support=Lulu",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sett, Jungle=Nocturne, Mid=Veigar, ADC=Caitlyn, Support=Vel'Koz\nRed: Top=Cho'Gath, Jungle=Rek'Sai, Mid=Vladimir, ADC=Twitch, Support=Braum",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Teemo, Jungle=Nocturne, Mid=Fizz, ADC=Twitch, Support=Braum\nRed: Top=Cho'Gath, Jungle=Amumu, Mid=Viktor, ADC=Draven, Support=Blitzcrank",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Malphite, Jungle=Kindred, Mid=Xerath, ADC=Twitch, Support=Braum\nRed: Top=Cho'Gath, Jungle=Nidalee, Mid=Malzahar, ADC=Lucian, Support=Senna",
+    "output": "Victoire de l'équipe rouge"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Sion, Jungle=Kha'Zix, Mid=Corki, ADC=Caitlyn, Support=Braum\nRed: Top=Fiora, Jungle=Evelynn, Mid=Vladimir, ADC=Vayne, Support=Bard",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Olaf, Jungle=Trundle, Mid=Mel, ADC=Vayne, Support=Pyke\nRed: Top=Lee Sin, Jungle=Kayn, Mid=Ryze, ADC=Twitch, Support=Braum",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Warwick, Jungle=Shyvana, Mid=Yasuo, ADC=Twitch, Support=Braum\nRed: Top=Renekton, Jungle=Diana, Mid=Varus, ADC=Vayne, Support=Nautilus",
+    "output": "Victoire de l'équipe bleue"
+  },
+  {
+    "instruction": "Prédire quelle équipe gagne cette partie de League of Legends.",
+    "input": "Blue: Top=Poppy, Jungle=Ivern, Mid=Yasuo, ADC=Tristana, Support=Neeko\nRed: Top=Camille, Jungle=Diana, Mid=Irelia, ADC=Twitch, Support=Braum",
+    "output": "Victoire de l'équipe rouge"
+  }
+]
