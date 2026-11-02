@@ -8,7 +8,7 @@ import random
 # -----------------------------
 # Config
 # -----------------------------
-API_KEY = "RGAPI-5f509208-a7f9-4082-a0a8-98193ec1faf0"
+API_KEY = os.environ["RIOT_API_KEY"]
 HEADERS = {"X-Riot-Token": API_KEY}
 
 TIER = "PLATINUM"
